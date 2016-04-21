@@ -1,15 +1,47 @@
 body {
 	background-image: url(images/reunion.jpg);
+	background-color: black;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+	
 }
+
+#menu{
+	box-shadow: inset 0px 0px 55px 8px rgba(0, 0, 0, 1)
+}
+
+
+img {
+	
+	width:100%;
+	height: auto;
+}
+
+
+#baniere{
+	width: auto;page_1.html
+	height: 110px;
+	padding: ;
+}
+
+
+#container{
+	width: 60%;
+	margin: auto;
+	padding: 20px;
+	box-shadow:		inset 0px 0px 0px black
+	
+}
+
 ul {
+
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
-    background-color: #333;
+    @background-color: #333;
 }
 
 li {
@@ -20,12 +52,12 @@ li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 17px;
     text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: green;
+    background-color: #1c3500;
 }
 
 li.dropdown {
@@ -34,7 +66,7 @@ li.dropdown {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position:	absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
