@@ -5,11 +5,12 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
 	
 }
 
 #menu{
-	box-shadow: inset 0px 0px 55px 8px rgba(0, 0, 0, 1)
+	box-shadow: inset 0px 0px 55px 18px rgba(0, 0, 0, 1)
 }
 
 
@@ -20,19 +21,9 @@ img {
 }
 
 
-#baniere{
-	width: auto;page_1.html
-	height: 110px;
-	padding: ;
-}
-
-
-#container{
-	width: 60%;
-	margin: auto;
-	padding: 20px;
-	box-shadow:		inset 0px 0px 0px black
-	
+#banniere{
+	width: auto;
+    padding: 0px;
 }
 
 ul {
@@ -41,7 +32,6 @@ ul {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    @background-color: #333;
 }
 
 li {
@@ -87,3 +77,5 @@ li.dropdown {
 }
 header h1{
 	text-align: center;
+	padding: 0px;
+}
