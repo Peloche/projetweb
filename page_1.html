@@ -11,21 +11,21 @@
 
     	<!--header-->
     	
-    <header>	
-		
-			<!--Banniere-->
-		
+    <header>
+			<!--Banniere-->		
 		<div id="banniere">
-			<img id="ban" src="images/banniere.JPG" alt="Banniere présentation" href="Bonjour"/>
+			<img src="images/banniere.JPG" alt="Banniere de présentation"/>
 		</div>
 		
 			<!--Menu de navigation-->
 		
 		<div id="menu">
-			
-			
 			<ul>
-				<li><a classe="active"href="Logo"><img src=""></a></li>
+				<li>
+					<div id="logo">
+						<img src="images/logo.png" alt="Logo">
+					</div>
+				</li>
 				<li><a href="page_1.html">Accueil</a></li>
 				<li class="dropdown">
 				<a href="#" class="dropbtn">Randonnées</a>
@@ -36,7 +36,7 @@
 		            </div> 
 		        </li> 
 		        <li class="dropdown">
-		        <a href="#" class="dropbtn">Cascades</a>
+		        	<a href="#" class="dropbtn">Cascades</a>
 		    		<div class="dropdown-content">
 		    		<a href="#">Cascade_1</a>
 		            <a href="#">Cascade_2</a>
@@ -44,7 +44,7 @@
 		            </div>
 		        </li>
 		        <li class="dropdown">  
-		        <a href="#" class="dropbtn">Point de vue</a>
+		        	<a href="#" class="dropbtn">Point de vue</a>
 		    		<div class="dropdown-content">
 		    		<a href="#">Point de vue_1</a>
 		            <a href="#">Point de vue_2</a>
@@ -53,20 +53,48 @@
 		        </li>
 		        
 		    </ul>
-			</div>
+		</div>
 		
-	</header>
-
-	    
-	
-		<!---------------MAIN---------->
-	
-    <div id="article">
-	    <article id="main">
-		  	<h1>Les titre</h1>
-		  	<p>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur.</p>
+	</header>    
+		<!--MAIN-->
+	<section>
+		<article>
+			<h2>Les titre</h2>
+		  		<p>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur.</p>
 		  	
-	    </article> 		
-	</div>	
+	    </article> 	
+	    <aside>
+	    	<h2>À propos de nous</h2>
+	    		<p>Nous sommes 4 étudiants en informatique à l'université de la Réunion.</p> 
+	    		<p>Nous avions pour projet de réaliser un site web original en 5 semaines. L'idée de créer un site regroupant les bons plans des randonnées, cascades et point de vue à la Réunion nous est venue tout naturellement puisque la nature est une passion commune au groupe.</p>
+	        	<p>Nous avons pris plaisir à coder ce site web et nous espérons que celui-ci vous plaira.</p>
+	        	<a href="https://www.youtube.com/watch?v=MzRB4lJqrE0" class="lien_yt"> Notre Chaîne Youtube></a>
+	    </aside>	
+	</section>	
+
+	<!--Pied de page-->
+	<footer>
+		<!--Utilisation de Flexbox pour la mise en page-->
+		<div id="contact">
+			<h1>Contact</h1>
+			<p>Adresse mail: viereunion@gmail.com</p>
+		</div>
+		<div id="photos">
+			<h1>Quelques photos</h1>
+				<p><img src="images/photo_1.jpg" alt="Photo"/>
+				<img src="images/photo_2.jpg" alt="Photo"/>
+				<img src="images/photo_6.jpg" alt="Photo"/>
+				<img src="images/photo_8.jpg" alt="Photo"/></p>
+		</div>
+		<div id="infos">
+			<h1>Infos utiles</h1>
+			<div id="liste_infos">
+				<ul>
+					<li><a href="www.meteo-reunion.com/" class="lien_meteo" >Météo Réunion</a></li>
+					<li><a href="gites-de-france-reunion.com/" class="lien_gites">Gîtes de France Réunion</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
     </body>
 </html>

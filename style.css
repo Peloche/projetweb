@@ -6,28 +6,30 @@ body {
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0px;
-	
 }
 
-#menu{
-	box-shadow: inset 0px 0px 55px 18px rgba(0, 0, 0, 1)
+header h1 {
+	text-align: center;
+	padding: 0px;
+}
+
+#menu {
+	box-shadow: inset 0px 0px 55px 18px rgba(0, 0, 0, 1);
+}
+
+#menu img {
+	display: flex;
+	width: 60px;
+	height: 60px;
 }
 
 
-img {
-	
-	width:100%;
-	height: auto;
-}
-
-
-#banniere{
-	width: auto;
+#banniere img {
+	width: 100%;
     padding: 0px;
 }
 
-ul {
-
+#menu > ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -42,11 +44,11 @@ li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 17px;
+    padding: 20px;
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+#menu > ul > li a:hover, .dropdown:hover .dropbtn {
     background-color: #1c3500;
 }
 
@@ -75,7 +77,63 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-header h1{
+
+section{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article{
+    margin-right: 20px;
+    flex: 3;
+}
+
+
+aside {
+    flex: 1;
+    position: relative;
+    background-color: #404040;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+.lien_yt {
+	color: rgb(230, 0, 0);
+}
+
+footer {
+	padding-top: 25px;
+	background: url(images/footer.jpg);
+	display: flex;
+	justify-content: space-around;
+}
+
+#photos img {
+	width: 90px;
+	height: 90px;
+	border: 1px solid #181818;
 	text-align: center;
-	padding: 0px;
+}
+
+footer h1 {
+	text-align: center;
+	font-size: 1.1em;
+	text-shadow: 1px 1px #000000;
+}
+
+#infos {
+	width: 30%;
+}
+#infos a {
+	color: #181818;
+	text-decoration: underline;
+}
+#infos a:hover {
+	color: green;
+}
+#contact p {
+	font-size: 1.2em;
+	padding-top: 30px;
+	font-family: Courier;
 }
