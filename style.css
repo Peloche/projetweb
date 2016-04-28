@@ -8,13 +8,19 @@ body {
 	margin: 0px;
 }
 
+
+
 header h1 {
 	text-align: center;
 	padding: 0px;
+	
 }
 
 #menu {
 	box-shadow: inset 0px 0px 55px 18px rgba(0, 0, 0, 1);
+	border-radius: 0px 0px 20px 0px;
+	
+	
 }
 
 #menu img {
@@ -23,16 +29,25 @@ header h1 {
 	height: 60px;
 }
 
+#banniere{
+ 	width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0px;
+}
 
 #banniere img {
 	width: 100%;
-    padding: 0px;
+	display: flex;
+    
+   
 }
 
 #menu > ul {
     list-style-type: none;
-    margin: 0px;
+    margin-top: 0px;
     padding: 0px;
+    
     overflow: hidden;
 }
 
@@ -50,6 +65,7 @@ li a, .dropbtn {
 
 #menu > ul > li a:hover, .dropdown:hover .dropbtn {
     background-color: #1c3500;
+
 }
 
 li.dropdown {
