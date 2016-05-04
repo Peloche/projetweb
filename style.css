@@ -64,8 +64,8 @@ li a, .dropbtn {
 }
 
 #menu > ul > li a:hover, .dropdown:hover .dropbtn {
-    background-color: #1c3500;
-
+    text-shadow: 0px 0px 5px #000000;
+    color: #fdff00;
 }
 
 li.dropdown {
@@ -74,21 +74,23 @@ li.dropdown {
 
 .dropdown-content {
     display: none;
-    position:	absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    width: 135px;
+    box-shadow: 0px 0px 100px 4px rgba(0,0,0,1);
+    background-color: #e5e1e1;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 10px 10px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -113,7 +115,7 @@ aside {
     position: relative;
     background-color: #404040;
     border-radius: 15px;
-    padding: 10px;
+    padding: 1%;
     color: white;
     font-size: 0.9em;
 }
@@ -123,9 +125,11 @@ aside {
 }
 
 footer {
-	padding-top: 25px;
+	padding-top: 20px;
 	background: url(images/footer.jpg);
 	display: flex;
+	width: auto;
+	height: auto;
 	justify-content: space-around;
 }
 
@@ -148,6 +152,7 @@ footer h1 {
 
 #liste_infos li a{
 	padding: 5px;
+
 }
 #infos a {
 	color: #181818;
@@ -160,4 +165,64 @@ footer h1 {
 	font-size: 1.2em;
 	padding-top: 30px;
 	font-family: Courier;
+}
+
+
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    
+    aside p:last-child
+    {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 480px)
+{
+    footer {
+    	padding-top: 10px;
+		background: url(images/footer.jpg);
+		display: flex;
+		width: auto;
+		height: auto;
+    }
+    #contact p {
+		font-size: 1.2em;
+		padding-top: 0px;
+		font-family: Courier;
+		text-align: center;
+	}
+	#photos {
+		display: none;
+	}
+	#infos {
+		display: none;
+	}
+	li a, .dropbtn {
+		font-size: 2em;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		color: white;
+    	padding: 20px;
+    	text-decoration: none;
+	}
+	.dropdown-content {
+    	display: none;
+   	 	position: absolute;
+    	width: 240px;
+	}
+
+
 }
